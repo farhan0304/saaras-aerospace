@@ -6,9 +6,10 @@ import copter from "../assets/copter.png"
 import flyingDrone from "../assets/flying-drone.png"
 import bgImage from "../assets/bgImage.png"
 import course from '../assets/course.jpg'
-
+import { useNavigate } from "react-router-dom"
 
 const Home = () => {
+  const navigate = useNavigate();
   const cardArr = [
     {
       title: "World-class Tech Research and Design",
@@ -161,7 +162,9 @@ const Home = () => {
       >
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Join our DGCA Approved Training Course</h2>
-          <button className="bg-gray-100 text-blue-600 px-8 py-3 rounded-md hover:bg-gray-300 font-semibold">
+          <button className="bg-gray-100 text-blue-600 px-8 py-3 rounded-md hover:bg-gray-300 font-semibold"
+          onClick={()=>navigate("/training")}
+          >
             Course Details
           </button>
         </div>
