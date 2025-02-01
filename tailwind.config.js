@@ -6,10 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'custom-image': "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('./src/assets/course.jpg')",
-        'hero-image': "url('./src/assets/bgImage.png')"
-      }
     },
   },
   plugins: [],

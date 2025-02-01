@@ -4,6 +4,8 @@ import {ReactTyped} from "react-typed"
 import who from "../assets/who.png"
 import copter from "../assets/copter.png"
 import flyingDrone from "../assets/flying-drone.png"
+import bgImage from "../assets/bgImage.png"
+import course from '../assets/course.jpg'
 
 
 const Home = () => {
@@ -30,7 +32,8 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-[600px] bg-hero-image bg-cover bg-center"
+        className="relative h-[600px] bg-cover bg-center"
+        style={{backgroundImage:`url(${bgImage})`}}
       >
       <div className="absolute inset-0 bg-black bg-opacity-35"></div>
       <div className="relative z-10 px-20 py-56">
@@ -153,7 +156,9 @@ const Home = () => {
       </section>
 
       {/* Training Course Section */}
-      <section className="bg-custom-image bg-cover text-gray-100 py-16 px-4">
+      <section className="bg-cover text-gray-100 py-16 px-4"
+      style={{backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${course})`}}
+      >
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">Join our DGCA Approved Training Course</h2>
           <button className="bg-gray-100 text-blue-600 px-8 py-3 rounded-md hover:bg-gray-300 font-semibold">
