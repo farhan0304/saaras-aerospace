@@ -73,7 +73,7 @@ const Home = () => {
             loading="lazy"
             src={flyingDrone}
             />
-            <h2 className="text-2xl font-bold mt-4 mb-4">DRONE TRAINING</h2>
+            <h2 className="text-2xl font-bold mt-6 mb-4">DRONE TRAINING</h2>
             <p className="mb-4">
               Our DGCA-certified drone pilot training offers expert instruction on safe drone operation, covering all
               essential skills and regulations for certification. Gain hands-on experience and become a proficient,
